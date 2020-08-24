@@ -32,21 +32,3 @@ class Solution:
             b ^= num
 
         return b
-
-
-def test1():
-    solution = Solution()
-    nums = [1, 2, 3, 4]
-    assert not solution.containsDuplicate(nums)
-
-
-def test2():
-    solution = Solution()
-    nums = [1, 1, 2, 3]
-    assert solution.containsDuplicate(nums)
-
-
-def test3():
-    solution = Solution()
-    nums = [1, 2, 2, 3]
-    assert solution.containsDuplicate(nums)
