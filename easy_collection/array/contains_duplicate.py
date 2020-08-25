@@ -1,5 +1,3 @@
-from typing import List
-
 # Question
 # --------------
 # Contains Duplicate
@@ -17,6 +15,8 @@ from typing import List
 # Your function should return true if any value appears at least twice in the
 # array, and it should return false if every element is distinct.
 # --------------
+
+from typing import List
 
 
 class Solution:
