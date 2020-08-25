@@ -27,9 +27,7 @@ class Solution:
         i = len(digits) - 1
         carry = 0
         while True and i > -1:
-
             plus_one = digits[i] + carry + (1 if i == len(digits) - 1 else 0)
-            print(digits[i], plus_one, plus_one % 10)
             carry = 1 if plus_one > 9 else 0
             digits[i] = plus_one % 10
             i -= 1
