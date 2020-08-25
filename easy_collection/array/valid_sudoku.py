@@ -33,8 +33,8 @@ class Solution:
         def get_square(i: int, j: int) -> Tuple[int, int]:
             return (get_index(i), get_index(j))
 
-        row_mem = defaultdict(set)
-        column_mem = defaultdict(set)
+        row_mem: DefaultDict[int, set] = defaultdict(set)
+        column_mem: DefaultDict[int, set] = defaultdict(set)
         square_mem: DefaultDict[Tuple[int, int], int] = defaultdict(set)
 
         for i in range(len(board)):
@@ -59,8 +59,3 @@ class Solution:
                     square_mem[square].add(board[i][j])
 
         return True
-
-
-def test1():
-    solution = Solution()
-    assert solution.twoSum([2, 7, 11, 15], 9) == [0, 1]
